@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;1,8..144,400;1,8..144,500;1,8..144,600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Serif', serif;
+}
+
+body {
+  padding-top: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Serif', serif;
+  background-image: linear-gradient(to top right, #E6E6FA, #FFF0F5, #EAF6F6, #FAF1F6);
+}
+
+/* Navigation Bar*/
+
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  background-image: linear-gradient(to right, #E6E6FA, #FFF0F5, #EAF6F6, #FAF1F6);
+  padding: 10px;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 55px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.nav-logo {
+  width: 150px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: right;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.nav-button-1, .nav-button-2, .nav-button-3, .nav-button-4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 30px;
+  margin: 0px 10px;
+  transition: background-color 0.15s;
+}
+
+.nav-button-1 {
+  background-color: #E6E6FA;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+}
+.nav-button-1:hover {
+  background-color: #dadaf8;
+}
+.nav-button-1:active {
+  opacity: 0.6;
+  box-shadow: 0 0 0 0;
+}
+
+.nav-button-2 {
+  background-color: #FFF0F5;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+}
+.nav-button-2:hover {
+  background-color: #fce4ec;
+}
+.nav-button-2:active {
+  opacity: 0.6;
+  box-shadow: 0 0 0 0;
+}
+
+.nav-button-3 {
+  background-color: #EAF6F6;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+}
+.nav-button-3:hover {
+  background-color: #dbf9f9;
+}
+.nav-button-3:active {
+  opacity: 0.6;
+  box-shadow: 0 0 0 0;
+}
+
+.nav-button-4 {
+  background-color: #FBF2E6;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+}
+.nav-button-4:hover {
+  background-color: #fcebd4;
+}
+.nav-button-4:active {
+  opacity: 0.6;
+  box-shadow: 0 0 0 0;
+}
+
+/* Section 1 */
+
+.product-order-info {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  column-gap: 25px;
+}
+
+.product-decs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.product-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: box-shadow 0.15s;
+  margin: 15px 0px;
+}
+
+.product-img:hover {
+  box-shadow: 0.5px 0.5px 14px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.product-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.product-price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 5px 0px 16px 0px;
+  text-align: center;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity-input {
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  width: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  padding: 4px 10px;
+  margin: 10px 0px;
+  background-image: linear-gradient(to top left, #E6E6FA, white);
+  box-shadow: 0.4px 0.4px 5px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.choice-input {
+  border: 1px solid rgb(230, 230, 230);
+  width: 350px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 4px 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background-image: linear-gradient(to top left, #E6E6FA, white);
+  box-shadow: 0.4px 0.4px 5px rgba(0, 0, 0, 0.18);
+  text-align: center;
+}
+
+.quantity-input::placeholder {
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0.4;
+  padding-bottom: 10px;
+}
+
+.product-info {
+  margin: 15px 15px 0px 0px;
+}
+
+.product-content-img {
+  width: 100%;
+  border-radius: 20px;
+  margin: 15px 10px 0px 0px;
+}
+
+
+
+
+.email-name-input {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  row-gap: 8px;
+  margin: 5px;
+  width: 100%;
+}
+
+.email-name {
+  padding: 8px 15px;
+  border-radius: 7px;
+  border: 1px solid lavender;
+  font-family: 'Roboto', sans-serif;
+  transition: box-shadow 0.15s;
+}
+
+.email-name:hover {
+  box-shadow: 0.5px 0.5px 18px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.email-name::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgb(226, 226, 226);
+}
+
+.email-input {
+  padding: 8px 15px;
+  width: 330px;
+  border-radius: 7px;
+  border: 1px solid lavender;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px;
+}
+
+.email-input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgb(226, 226, 226);
+  transition: box-shadow 0.15s;
+}
+
+.email-input:hover {
+  box-shadow: 0.5px 0.5px 18px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.checkbox-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.tos-pp-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+  padding: 5px;
+}
+
+.subscribe-button {
+  font-family: Roboto;
+  font-size: 18px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: lavender;
+  width: 85%;
+  margin: 5px;
+  text-align: center;
+}
+
+.subscribe-button:hover {
+  background-color: rgb(215, 215, 249);
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-button:active {
+  opacity: 0.7;
+}
+
+.contact-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  box-shadow: 0.4px 0.4px 5px rgba(0, 0, 0, 0.18);
+}
